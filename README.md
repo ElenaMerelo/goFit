@@ -8,7 +8,7 @@ API web para guardar, consultar y obtener fácilmente entrenamientos, ya sean ti
 
 ## Herramientas
 
--  Lenguaje -> `go`
+-  Lenguaje -> `javascript`
 
 ## Documentación 
 
@@ -16,7 +16,7 @@ API web para guardar, consultar y obtener fácilmente entrenamientos, ya sean ti
 
 ### Enlaces adicionales 
 
-- [Por qué he eligido `go`](docs/herramientas.md)
+- [Por qué he eligido `javascript`](docs/herramientas.md)
 - [Configuración de `git`](docs/git.md)
 
 ## Autora 
