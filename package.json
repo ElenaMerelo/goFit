@@ -24,5 +24,7 @@
   "bugs": {
     "url": "https://github.com/ElenaMerelo/goFit/issues"
   },
-  "homepage": "https://github.com/ElenaMerelo/goFit#readme"
+  "homepage": "https://github.com/ElenaMerelo/goFit#readme",
+  "type" : "module"
+
 }
