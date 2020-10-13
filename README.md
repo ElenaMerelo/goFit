@@ -24,6 +24,7 @@ Requisitos que nos gustaría cumpliera el proyecto:
 ### Enlaces adicionales 
 
 - [Por qué he eligido `javascript`](docs/herramientas.md)
+- [Por qué he elegido `AVA` como marco de pruebas de `javascript](docs/herramientas.md)
 - [Configuración de `git`](docs/git.md)
 - Ficheros y otros parámetros de configuración en [iv.yaml](iv.yaml)
 
