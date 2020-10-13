@@ -36,13 +36,11 @@
 - Añadir al [package.json](../package.json):
  
   ~~~
-  
     "ava": {
         "require": [
             "esm"
         ]
-    }
-    
- ~~~
+    } 
+  ~~~
 
 - `npm test` et voilà :D

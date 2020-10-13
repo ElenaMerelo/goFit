@@ -1,1 +1,3 @@
-entidad: src/workout_factory/workout.js
+entidad: src/workout_factory/workout_factory.js
+lenguaje: javascript
+test: test.js
