@@ -1,5 +1,5 @@
 {
-  "name": "gofit",
+  "name": "goFit",
   "version": "1.0.0",
   "description": "api web para entrenamiento personal",
   "main": "index.js",
@@ -7,8 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava"
   },
   "repository": {
     "type": "git",
@@ -25,6 +24,17 @@
     "url": "https://github.com/ElenaMerelo/goFit/issues"
   },
   "homepage": "https://github.com/ElenaMerelo/goFit#readme",
-  "type" : "module"
+  "type": "module",
+  "devDependencies": {
+    "ava": "^3.13.0",
+    "esm": "^3.2.25"
+  },
+  
+  "ava": {
+      "require": [
+          "esm"
+      ]
+  }
+
 
 }
