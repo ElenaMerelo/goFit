@@ -27,21 +27,21 @@
          "intensity": "high",
          "muscleGroup": "upper_body",
          "description": "Performed from a plank position, you'll alternate bringing one knee to your chest, then back out again, speeding up each time until you're running against the floor"
-      }
+      },
       {
          "name": "burpee",
          "discipline": ["hiit", "cardio"], 
          "intensity": "high",
          "muscleGroup": "total_body",
          "description": "stand -> jump squat -> high plank -> push up -> mountain climber -> jump and start again"
-      }
+      },
       {
          "name": "front kick",
          "discipline": "kickboxing",
          "intensity": "low",
          "muscleGroup": "lower_body",
          "description": "front kick"
-      }
+      },
       {
          "name": "sumo squat",
          "discipline": ["pilates", "bodyweight", "functional_training"],

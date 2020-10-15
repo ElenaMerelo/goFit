@@ -29,4 +29,17 @@ export default class Exercise {
         this.muscleGroup = muscleGroup;
         this.description = description;
     }
+
+    get discipline(){
+        return this.discipline;
+    }
+
+
+    get intensity(){
+        return this.intensity;
+    }
+
+    get muscleGroup(){
+        return this.muscleGroup;
+    }
 }
