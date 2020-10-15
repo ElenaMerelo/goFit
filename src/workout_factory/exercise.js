@@ -7,6 +7,7 @@ export const intensities = {
 
 export const disciplines = {
     YOGA: 'yoga',
+    PILATES: 'pilates',
     KICKBOXING: 'kickboxing',
     CARDIO: 'cardio',
     HIIT: 'hiit',
@@ -14,19 +15,18 @@ export const disciplines = {
     BODYWEIGHT: 'bodyweight'
 } 
 
-export const musclegroups = {
+export const muscleGroups = {
     TOTALBODY: 'total_body',
     LOWERBODY: 'lower_body',
     UPPERBODY: 'upper_body'
 }
 
 export default class Exercise {
-    constructor(name, discipline, intensity, muscleGroup, duration, description){
+    constructor(name, discipline, intensity, muscleGroup, description){
         this.name = name;
         this.discipline = discipline;
         this.intensity = intensity;
         this.muscleGroup = muscleGroup;
-        this.duration = duration;
         this.description = description;
     }
 }
