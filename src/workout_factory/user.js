@@ -8,6 +8,4 @@ export default class User {
         this.name = name;
         this.gender = gender; 
     }
-
-    accessDoneWorkouts() {}
 }

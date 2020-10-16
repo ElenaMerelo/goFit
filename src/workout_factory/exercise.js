@@ -1,11 +1,11 @@
-export const intensities = {
+export const Intensity = {
     HIGH: 'high',
     MEDIUM: 'medium',
     LOW: 'low'
 
 }
 
-export const disciplines = {
+export const Discipline = {
     YOGA: 'yoga',
     PILATES: 'pilates',
     KICKBOXING: 'kickboxing',
@@ -15,7 +15,7 @@ export const disciplines = {
     BODYWEIGHT: 'bodyweight'
 } 
 
-export const muscleGroups = {
+export const MuscleGroup = {
     TOTALBODY: 'total_body',
     LOWERBODY: 'lower_body',
     UPPERBODY: 'upper_body'
