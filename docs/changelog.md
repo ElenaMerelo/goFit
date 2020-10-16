@@ -1,5 +1,6 @@
 ## Issues cerradas en el hito 2
-
+- [#9  Añadir changelog                                  ](https://github.com/ElenaMerelo/goFit/issues/9)
+- [#19  Testear y completar clase Exercise            ](https://github.com/ElenaMerelo/goFit/issues/19)
 - [#20  Añadir gulp                                   ](https://github.com/ElenaMerelo/goFit/issues/20)
 - [#19  Testear y completar clase Exercise            ](https://github.com/ElenaMerelo/goFit/issues/19)
 - [#17  Añadir spellchecker                           ](https://github.com/ElenaMerelo/goFit/issues/17)
