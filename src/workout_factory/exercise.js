@@ -30,38 +30,38 @@ export default class Exercise {
   }
 
   get discipline() {
-    return this.discipline;
+    return this.__discipline__;
   }
 
-  set discipline(attr){
-    if (attr in Object.values(Discipline))
-        this.discipline= attr;
-    else
-        throw new Error("Invalid discipline: " + attr);
-
+  set discipline(attr) {
+    if (!Array.isArray(attr))
+      throw new Error(`Invalid discipline: ${attr} is not an array`);
+    let discipline = [];
+    for (let i = 0; i < attr.length; i++) {
+      if (Object.values(Discipline).indexOf(attr[i]) !== -1)
+        discipline.push(attr[i]);
+      else throw new Error(`Invalid discipline: ${attr[i]}`);
+    }
+    this.__discipline__ = discipline;
   }
 
   get intensity() {
-    return this.intensity;
+    return this.__intensity__;
   }
 
-  set intensity(attr){
-    if (attr in Object.values(Intensity))
-        this.intensity= attr;
-    else
-        throw new Error("Invalid intensity: " + attr);
-
+  set intensity(attr) {
+    if (Object.values(Intensity).indexOf(attr) !== -1)
+      this.__intensity__ = attr;
+    else throw new Error("Invalid intensity: " + attr);
   }
 
   get muscleGroup() {
-    return this.muscleGroup;
+    return this.__muscleGroup__;
   }
 
-  set muscleGroup(attr){
-    if (attr in Object.values(MuscleGroup))
-        this.muscleGroup= attr;
-    else
-        throw new Error("Invalid muscle group: " + attr);
-
+  set muscleGroup(attr) {
+    if (Object.values(MuscleGroup).indexOf(attr) !== -1)
+      this.__muscleGroup__ = attr;
+    else throw new Error("Invalid muscle group: " + attr);
   }
 }
