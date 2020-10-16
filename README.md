@@ -12,6 +12,7 @@ API web para guardar, consultar y obtener fácilmente entrenamientos, ya sean ti
 
 - Las clases creadas para poder llevar a cabo el proyecto se encuentran [aquí](src/). 
 - [Documentación](docs/)
+- El proceso del repositorio puede consultarse [aquí](docs/changelog.md)
 
 ## Historias de usuario 
 
