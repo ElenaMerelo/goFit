@@ -1,3 +1,5 @@
+![Node.js CI](https://github.com/ElenaMerelo/goFit/workflows/Node.js%20CI/badge.svg?branch=master)
+
 # goFit
 
 > Proyecto para la asignatura de Infraestructura Virtual
