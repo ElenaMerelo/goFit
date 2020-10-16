@@ -1,3 +1,10 @@
-entidad: src/workout_factory/workout_factory.js
+entidad:
+  - src/workout_factory/workout_factory.js
+  - src/workout_factory/workout.js
+  - src/workout_factory/exercise.js
+  - src/workout_factory/user.js
 lenguaje: javascript
-test: test.js
+test:
+  - tests/exercise.test.js
+  - tests/workout.test.js
+taskfile: package.json
