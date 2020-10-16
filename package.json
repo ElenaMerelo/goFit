@@ -6,6 +6,7 @@
   "directories": {
     "doc": "docs"
   },
+  "type": "module",
   "scripts": {
     "test": "ava"
   },
@@ -24,21 +25,18 @@
     "url": "https://github.com/ElenaMerelo/goFit/issues"
   },
   "homepage": "https://github.com/ElenaMerelo/goFit#readme",
-  "type": "module",
   "devDependencies": {
     "ava": "^3.13.0",
     "esm": "^3.2.25"
   },
-  
   "ava": {
-    "files":[
+    "files": [
       "tests/**/*",
       "!tests/exercises_data.js"
     ],
-      "require": [
-          "esm"
-      ]
-  }
-
-
+    "require": [
+      "esm"
+    ]
+  },
+  "dependencies": {}
 }
