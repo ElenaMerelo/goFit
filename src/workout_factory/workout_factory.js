@@ -9,8 +9,8 @@ export default class WorkoutFactory {
 
     createFrom({discipline, intensity, muscleGroup}) {}
     createFromDiscipline(discipline) {
-        var filtered= [];
-        for(var i= 0; i< exercises.lenght; i++){
+        let filtered= [];
+        for(let i= 0; i< exercises.lenght; i++){
             if(exercises[i].discipline == discipline)
                 filtered.push(exercises[i]);
         }
@@ -18,8 +18,8 @@ export default class WorkoutFactory {
     }
 
     createFromIntensity(intensity) {
-        var filtered= [];
-        for(var i= 0; i< exercises.lenght; i++){
+        let filtered= [];
+        for(let i= 0; i< exercises.lenght; i++){
             if(exercises[i].intensity == intensity)
                 filtered.push(exercises[i]);
         }
@@ -27,8 +27,8 @@ export default class WorkoutFactory {
     }
 
     createFromMuscleGroup(muscleGroup) {
-        var filtered= [];
-        for(var i= 0; i< exercises.lenght; i++){
+        let filtered= [];
+        for(let i= 0; i< exercises.lenght; i++){
             if(exercises[i].muscleGroup == muscleGroup)
                 filtered.push(exercises[i]);
         }
