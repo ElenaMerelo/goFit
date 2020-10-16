@@ -1,12 +1,6 @@
 # Justificación de herramientas 
 
 - He escogido `javascript` ya que es fácil de aprender y se presta mucho a hacer cosas en la web. 
-- `AVA` es un marco de prueba ligero y minimalista que aprovecha la naturaleza asincrónica de Javascript. AVA puede realizar pruebas al mismo tiempo.
-  Te permite un control casi total sobre lo que haces. Se centra principalmente en ejecutar pruebas para código basado en NodeJS. Algunos de los beneficios incluyen:
-
-    - La huella ligera lo hace más rápido
-    - Ejecuta pruebas de forma asincrónica y concurrente
-    - Más rápido que la mayoría de los otros marcos de prueba
-    - La sintaxis más simple para las pruebas de Javascript
-    - Rastros de pila más limpios para cualquier error potencial que se detecte
-  [Fuente](https://geekflare.com/es/javascript-unit-testing/)
+- He escogido `AVA` ya que es un marco de prueba ligero y minimalista que aprovecha la naturaleza asincrónica de Javascript, en comparación con los otros que vi era más sencillo y fácil de configurar,... A win-win. Y tiene un logo muy chu-chu-chuli.
+  
+- La elección de task runner para javascript al final se quedaba entre grunt, gulp o npm. Intenté usar gulp, pero me daba error con ava de que no soportaba los require de módulos de entrada y salida; y no podía solucionarse. Así, intenté usar grunt y pasaba lo mismo. Yo desde el principio quería usar npm por [este artículo](https://www.freecodecamp.org/news/why-i-left-gulp-and-grunt-for-npm-scripts-3d6853dd22b8/) pero me dejé influenciar por otros, y visto lo mal que se configuraban grunt y gulp y lo contenta que estaba yo con mi npm, me quedo con él.

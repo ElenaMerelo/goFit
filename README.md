@@ -31,6 +31,7 @@ Requisitos que nos gustaría cumpliera el proyecto:
 
 - [Por qué he eligido `javascript`](docs/herramientas.md)
 - [Por qué he elegido `AVA` como marco de pruebas de `javascript](docs/herramientas.md)
+- [Por qué he elegido `npm` como task runner](docs/herramientas.md)
 - [Planificación del proyecto](docs/planning.md)
 
 ## Autora 
