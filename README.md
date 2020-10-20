@@ -23,7 +23,7 @@ Requisitos que nos gustaría cumpliera el proyecto:
 - [HU3: Crear entrenamientos según una intensidad](https://github.com/elenamerelo/goFit/issues/4)
 - [HU4: Crear entrenamientos según un grupo muscular](https://github.com/elenamerelo/goFit/issues/5)
 - [HU5: Crear entrenamientos según una disciplina](https://github.com/elenamerelo/goFit/issues/6)
-
+- [HU6: Crear entrenamiento](https://github.com/elenamerelo/goFit/issues/23)
 ## En cuanto a configuración
 
 - [Configuración de `git`](docs/git.md)
@@ -33,9 +33,10 @@ Requisitos que nos gustaría cumpliera el proyecto:
 ### Enlaces adicionales 
 
 - [Por qué he eligido `javascript`](docs/herramientas.md)
-- [Por qué he elegido `AVA` como marco de pruebas de `javascript](docs/herramientas.md)
+- [Por qué he elegido `AVA` como marco de pruebas de `javascript`](docs/herramientas.md)
 - [Por qué he elegido `npm` como task runner](docs/herramientas.md)
 - [Planificación del proyecto](docs/planning.md)
+- Sobre la [biblioteca de aserciones](docs/aserciones.md)
 
 ## Autora 
 

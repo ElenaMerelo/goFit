@@ -1,0 +1,1 @@
+La biblioteca de aserciones viene al instalar `ava`, sin necesidad de configurar nada más. Todo sobre ella [aquí](https://github.com/avajs/ava/blob/master/docs/03-assertions.md)
