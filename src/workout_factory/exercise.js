@@ -20,6 +20,30 @@ export const MuscleGroup = {
   UPPERBODY: "upper_body",
 };
 
+class AttributeError extends Error {
+  constructor(type, attr) {
+    super(`Invalid attribute: ${attr} is not a ${type}`);
+    this.name = "AttributeError";
+  }
+}
+
+class InvalidDiscipline extends AttributeError {
+  constructor(attr) {
+    super("discipline", attr);
+  }
+}
+
+class InvalidIntensity extends AttributeError {
+  constructor(attr) {
+    super("intensity", attr);
+  }
+}
+
+class InvalidMuscleGroup extends AttributeError {
+  constructor(attr) {
+    super("muscle group", attr);
+  }
+}
 export default class Exercise {
   constructor(name, discipline, intensity, muscleGroup, description) {
     this.name = name;
@@ -34,13 +58,12 @@ export default class Exercise {
   }
 
   set discipline(attr) {
-    if (!Array.isArray(attr))
-      throw new Error(`Invalid discipline: ${attr} is not an array`);
+    if (!Array.isArray(attr)) throw new InvalidadDiscipline(attr);
     let discipline = [];
     for (let i = 0; i < attr.length; i++) {
       if (Object.values(Discipline).indexOf(attr[i]) !== -1)
         discipline.push(attr[i]);
-      else throw new Error(`Invalid discipline: ${attr[i]}`);
+      else throw new InvalidadDiscipline(attr[i]);
     }
     this.__discipline__ = discipline;
   }
@@ -52,7 +75,7 @@ export default class Exercise {
   set intensity(attr) {
     if (Object.values(Intensity).indexOf(attr) !== -1)
       this.__intensity__ = attr;
-    else throw new Error("Invalid intensity: " + attr);
+    else throw new InvalidIntensity(attr);
   }
 
   get muscleGroup() {
@@ -62,6 +85,6 @@ export default class Exercise {
   set muscleGroup(attr) {
     if (Object.values(MuscleGroup).indexOf(attr) !== -1)
       this.__muscleGroup__ = attr;
-    else throw new Error("Invalid muscle group: " + attr);
+    else throw new InvalidMuscleGroup(attr);
   }
 }
