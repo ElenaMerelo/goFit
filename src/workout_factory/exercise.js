@@ -27,19 +27,19 @@ class AttributeError extends Error {
   }
 }
 
-class InvalidDiscipline extends AttributeError {
+export class InvalidDiscipline extends AttributeError {
   constructor(attr) {
     super("discipline", attr);
   }
 }
 
-class InvalidIntensity extends AttributeError {
+export class InvalidIntensity extends AttributeError {
   constructor(attr) {
     super("intensity", attr);
   }
 }
 
-class InvalidMuscleGroup extends AttributeError {
+export class InvalidMuscleGroup extends AttributeError {
   constructor(attr) {
     super("muscle group", attr);
   }
@@ -58,12 +58,12 @@ export default class Exercise {
   }
 
   set discipline(attr) {
-    if (!Array.isArray(attr)) throw new InvalidadDiscipline(attr);
+    if (!Array.isArray(attr)) throw new InvalidDiscipline(attr);
     let discipline = [];
     for (let i = 0; i < attr.length; i++) {
       if (Object.values(Discipline).indexOf(attr[i]) !== -1)
         discipline.push(attr[i]);
-      else throw new InvalidadDiscipline(attr[i]);
+      else throw new InvalidDiscipline(attr[i]);
     }
     this.__discipline__ = discipline;
   }
