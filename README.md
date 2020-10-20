@@ -8,6 +8,10 @@
 
 API web para guardar, consultar y obtener fácilmente entrenamientos, ya sean tipo HIIT, cardio, basados en técnicas de kickboxing, una práctica de yoga o pilates,... La idea es que introduciendo tiempo disponible, intensidad y/o grupo muscular deseado, nos cree o nos provea con una sesión del tipo también especificado, de entre las opciones antes mencionadas. Surge con la idea de reducir el tiempo dedicado a la planificación de entrenamientos.
 
+Para correr los tests, ejecutar:
+
+    npm test
+
 ## Estructuración
 
 - Las clases creadas para poder llevar a cabo el proyecto se encuentran [aquí](src/). 
