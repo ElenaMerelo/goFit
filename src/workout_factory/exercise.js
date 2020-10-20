@@ -47,14 +47,14 @@ export class InvalidMuscleGroup extends AttributeError {
 export default class Exercise {
   constructor(name, discipline, intensity, muscleGroup, description) {
     this.name = name;
-    this.discipline = discipline;
-    this.intensity = intensity;
-    this.muscleGroup = muscleGroup;
+    this._discipline = discipline;
+    this._intensity = intensity;
+    this._muscleGroup = muscleGroup;
     this.description = description;
   }
 
   get discipline() {
-    return this.__discipline__;
+    return this._discipline;
   }
 
   set discipline(attr) {
@@ -65,26 +65,25 @@ export default class Exercise {
         discipline.push(attr[i]);
       else throw new InvalidDiscipline(attr[i]);
     }
-    this.__discipline__ = discipline;
+    this._discipline = discipline;
   }
 
   get intensity() {
-    return this.__intensity__;
+    return this._intensity;
   }
 
   set intensity(attr) {
-    if (Object.values(Intensity).indexOf(attr) !== -1)
-      this.__intensity__ = attr;
+    if (Object.values(Intensity).indexOf(attr) !== -1) this._intensity = attr;
     else throw new InvalidIntensity(attr);
   }
 
   get muscleGroup() {
-    return this.__muscleGroup__;
+    return this._muscleGroup;
   }
 
   set muscleGroup(attr) {
     if (Object.values(MuscleGroup).indexOf(attr) !== -1)
-      this.__muscleGroup__ = attr;
+      this._muscleGroup = attr;
     else throw new InvalidMuscleGroup(attr);
   }
 }
