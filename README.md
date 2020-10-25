@@ -17,6 +17,7 @@ Para correr los tests, ejecutar:
 - Las clases creadas para poder llevar a cabo el proyecto se encuentran [aquí](src/). 
 - [Documentación](docs/)
 - El proceso del repositorio puede consultarse [aquí](docs/changelog.md)
+- [Tests](tests/)
 
 ## Historias de usuario 
 
@@ -28,6 +29,7 @@ Requisitos que nos gustaría cumpliera el proyecto:
 - [HU4: Crear entrenamientos según un grupo muscular](https://github.com/elenamerelo/goFit/issues/5)
 - [HU5: Crear entrenamientos según una disciplina](https://github.com/elenamerelo/goFit/issues/6)
 - [HU6: Crear entrenamiento](https://github.com/elenamerelo/goFit/issues/23)
+
 ## En cuanto a configuración
 
 - [Configuración de `git`](docs/git.md)
@@ -41,6 +43,7 @@ Requisitos que nos gustaría cumpliera el proyecto:
 - [Por qué he elegido `npm` como task runner](docs/herramientas.md)
 - [Planificación del proyecto](docs/planning.md)
 - Sobre la [biblioteca de aserciones](docs/aserciones.md)
+- [Por qué he elegido `node` como contenedor base de docker](docs/contenedorbase.md)
 
 ## Autora 
 

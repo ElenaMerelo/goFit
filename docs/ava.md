@@ -32,7 +32,7 @@
     });
   ~~~
 
-- `npm install esm --save-dev` para trabajar de una manera más sencilla 
+- `npm install esm --save-dev`
 - Añadir al [package.json](../package.json):
  
   ~~~
