@@ -12,6 +12,10 @@ Para correr los tests, ejecutar:
 
     npm test
 
+Para desplegar el contenedor Docker:
+
+
+
 ## Estructuración
 
 - Las clases creadas para poder llevar a cabo el proyecto se encuentran [aquí](src/). 
