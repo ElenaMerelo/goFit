@@ -26,8 +26,6 @@ jobs:
   build:
     needs: login
     runs-on: ubuntu-latest
-    container: elenamerelo/gofit
     steps:
       - uses: actions/checkout@v2
-      - run: ls
-      - run: npm test
+      - run: docker run -v `pwd`:/test -t elenamerelo/gofit

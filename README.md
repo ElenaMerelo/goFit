@@ -13,7 +13,13 @@ Para correr los tests, ejecutar:
     npm test
 
 Para desplegar el contenedor Docker:
+   
+    docker pull elenamerelo/gofit
+    docker run -t -v `pwd`:/test
 
+Para descargarte el contenedor del registro de Github:
+
+    docker pull ghcr.io/elenamerelo/gofit:latest
 
 
 ## Estructuración
@@ -42,12 +48,15 @@ Requisitos que nos gustaría cumpliera el proyecto:
 
 ### Enlaces adicionales 
 
-- [Por qué he eligido `javascript`](docs/herramientas.md)
+- [Por qué he elegido `javascript`](docs/herramientas.md)
 - [Por qué he elegido `AVA` como marco de pruebas de `javascript`](docs/herramientas.md)
 - [Por qué he elegido `npm` como task runner](docs/herramientas.md)
 - [Planificación del proyecto](docs/planning.md)
 - Sobre la [biblioteca de aserciones](docs/aserciones.md)
 - [Por qué he elegido `node` como contenedor base de docker](docs/contenedorbase.md)
+- [Dockerfile](./Dockerfile)
+- [Github registry](https://github.com/users/elenamerelo/packages/container/package/gofit)
+- [Contenedor subido a Docker Hub](https://hub.docker.com/r/elenamerelo/gofit)
 
 ## Autora 
 
