@@ -57,6 +57,7 @@ Requisitos que nos gustaría cumpliera el proyecto:
 - [Dockerfile](./Dockerfile)
 - [Github registry](https://github.com/users/elenamerelo/packages/container/package/gofit)
 - [Contenedor subido a Docker Hub](https://hub.docker.com/r/elenamerelo/gofit)
+- [Automatización del build de docker](docs/dh.md)
 
 ## Autora 
 
