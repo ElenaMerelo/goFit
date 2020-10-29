@@ -12,6 +12,10 @@ Para correr los tests, ejecutar:
 
     npm test
 
+Para iniciar la API: 
+
+    npm start
+
 Para desplegar el contenedor Docker:
    
     docker pull elenamerelo/gofit

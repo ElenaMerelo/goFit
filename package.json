@@ -8,6 +8,7 @@
   },
   "type": "module",
   "scripts": {
+    "start": "node index.js",
     "test": "ava"
   },
   "repository": {
@@ -39,5 +40,7 @@
       "esm"
     ]
   },
-  "dependencies": {}
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
