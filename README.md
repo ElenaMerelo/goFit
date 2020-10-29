@@ -21,6 +21,14 @@ Para descargarte el contenedor del registro de Github:
 
     docker pull ghcr.io/elenamerelo/gofit:latest
 
+## Rúbricas Práctica 3
+
+- [Por qué he elegido `node` como contenedor base de docker](docs/contenedorbase.md)
+- [Dockerfile](./Dockerfile)
+- [Github registry](https://github.com/users/elenamerelo/packages/container/package/gofit)
+- [Contenedor subido a Docker Hub](https://hub.docker.com/r/elenamerelo/gofit)
+- [Automatización del build de docker](docs/dh.md)
+- [Configuración GitHub Container registry](docs/ghcr.md)
 
 ## Estructuración
 
@@ -53,11 +61,6 @@ Requisitos que nos gustaría cumpliera el proyecto:
 - [Por qué he elegido `npm` como task runner](docs/herramientas.md)
 - [Planificación del proyecto](docs/planning.md)
 - Sobre la [biblioteca de aserciones](docs/aserciones.md)
-- [Por qué he elegido `node` como contenedor base de docker](docs/contenedorbase.md)
-- [Dockerfile](./Dockerfile)
-- [Github registry](https://github.com/users/elenamerelo/packages/container/package/gofit)
-- [Contenedor subido a Docker Hub](https://hub.docker.com/r/elenamerelo/gofit)
-- [Automatización del build de docker](docs/dh.md)
 
 ## Autora 
 
