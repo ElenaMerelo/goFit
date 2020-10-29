@@ -6,15 +6,26 @@ export default class WorkoutFactory {
     this.exercises = exercises;
   }
 
-  generateWorkout(total_duration, { disciplines, intensity, muscleGroup }) {
-    filtered = this.createFrom({ disciplines, intensity, muscleGroup });
-    exercises = filtered.slice(
+  generateWorkout(
+    total_duration,
+    {
+      disciplines = [Discipline.PILATES],
+      intensity = Intensity.LOW,
+      muscleGroup = MuscleGroup.TOTALBODY,
+    }
+  ) {
+    console.log(disciplines);
+    console.log(intensity);
+    console.log(muscleGroup);
+    let filtered = this.createFrom({ disciplines, intensity, muscleGroup });
+    console.log(filtered);
+    let exercises = filtered.slice(
       0,
-      this.calculateNumExercises(total_duration, intensity || Intensity.LOW)
+      this.calculateNumExercises(total_duration, intensity)
     );
     return new Workout(
       total_duration,
-      discipline,
+      intensity,
       muscleGroup,
       disciplines,
       exercises
