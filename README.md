@@ -2,7 +2,7 @@
 
 # goFit
 
-> Proyecto para la asignatura de Infraestructura Virtual
+> Proyecto para la asignatura de Infraestructura Virtual 
 
 ## Descripción
 
@@ -24,6 +24,11 @@ Para desplegar el contenedor Docker:
 Para descargarte el contenedor del registro de Github:
 
     docker pull ghcr.io/elenamerelo/gofit:latest
+
+## Rúbricas Práctica 4
+
+- [Configuración de Travis](docs/travisconf.md)
+- [Configuración de las GitHub Action](ghaconf.md)
 
 ## Rúbricas Práctica 3
 
