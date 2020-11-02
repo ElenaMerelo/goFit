@@ -1,0 +1,9 @@
+language: node_js
+node_js: -14
+before_install:
+  - git checkout master
+  - npm install ava
+  - npm install .
+
+script:
+  - npm test
