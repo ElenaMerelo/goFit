@@ -1,10 +1,13 @@
 language: node_js
+
 node_js:
   - 14
+  - 13
+  - 12
+
 before_install:
-  - git checkout master
-  - npm install ava
-  - npm install .
+  - npm install -g ava
+  - npm install ci
 
 script:
   - npm test
