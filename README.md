@@ -27,8 +27,7 @@ Para descargarte el contenedor del registro de Github:
 
 ## Rúbricas Práctica 4
 
-- [Configuración de Travis](docs/travisconf.md)
-- [Configuración de las GitHub Action](docs/ghaconf.md)
+- [Integración Continua](docs/ci.md)
 
 ## Rúbricas Práctica 3
 
