@@ -20,9 +20,9 @@ const wf = new WorkoutFactory(exercises);
 // utilizamos primero un middleware para transformar el raw input a json
 app.use(express.json());
 
-app.get("/", (req, res) => res.send("Welcome to goFit"));
+app.get("/api/", (req, res) => res.send("Welcome to goFit"));
 
-app.get("/workout", (req, res) => {
+app.get("/api/workout", (req, res) => {
   if (!req.query.duration)
     res.send({ error: "Error: ha de especificar duración" });
   if (!(req.query.intensity || req.query.disciplines || req.query.muscleGroup))

@@ -14,7 +14,7 @@ Como se puede ver en [la documentación](https://vercel.com/docs/runtimes#offici
 
 Por las razones expuestas, no vamos a crear ningún archivo `vercel.json`, no hace falta.
 
-Creamos el directorio `api` y ahí hacemos nuestra función `gofit`, creando un fichero [gofit.js](../api/gofit.js). Dado que uso `express`, [vercel me permite](https://vercel.com/guides/using-express-with-vercel) reusar mi objeto `app`, que ya tiene todas las rutas de la API definidas. La función quedaría pues así de simple:
+Creamos el directorio `api` y ahí hacemos nuestra función `gofit`, creando un fichero [workout.js](../api/workout.js). Dado que uso `express`, [vercel me permite](https://vercel.com/guides/using-express-with-vercel) reusar mi objeto `app`, que ya tiene todas las rutas de la API definidas. La función quedaría pues así de simple:
 
 ~~~javascript
 import app from 'src/workout_factory/app.js';
@@ -22,10 +22,4 @@ import app from 'src/workout_factory/app.js';
 module.exports = app;
 ~~~
 
-El único problema es que las rutas definidas en `app` empiezan desde `/`, y las de nuestra función de Vercel empiezan en `/api/`. Consecuentemente, al final si que tenemos que hacer un `vercel.json` reenrutando las peticiones que lleguen a nuestra api:
-
-~~~json
-{
-  "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }]
-}
-~~~
+El endpoint de la API puede ser ahora consultado [aquí](https://go-fit.elenamerelo.vercel.app/api/workout?duration=100&intensity=high&muscleGroup=upper_body&disciplines=yoga).
