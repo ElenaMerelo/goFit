@@ -21,6 +21,10 @@ bot.hears(/\/workout (.+)/, async (ctx) => {
   bot.telegram.sendMessage(ctx.chat.id, res);
 });
 
+bot.hears(/.+/, async (ctx) =>
+  bot.telegram.sendMessage(ctx.chat.id, "No entiendo na.")
+);
+
 exports.handler = async (event, ctx, callback) => {
   await bot.handleUpdate(JSON.parse(event.body));
   return callback(null, { statusCode: 200 });
