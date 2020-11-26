@@ -25,6 +25,11 @@ Para descargarte el contenedor del registro de Github:
 
     docker pull ghcr.io/elenamerelo/gofit:latest
 
+## Rúbricas Práctica 5
+
+- [Documentación serverless](docs/vercel.md)
+- [Documentación del bot](docs/telegram.md)
+
 ## Rúbricas Práctica 4
 
 - [Integración Continua](docs/ci.md)
