@@ -1,7 +1,12 @@
 const express = require("express");
 const { WorkoutFactory } = require("./workout_factory.js");
 const { spec } = require("../../test/exercises_data.js");
-const { Exercise, Discipline, MuscleGroup } = require("./exercise.js");
+const {
+  Exercise,
+  Discipline,
+  MuscleGroup,
+  Intensity,
+} = require("./exercise.js");
 
 const initFactory = () => {
   const exercises = spec.exercises.map(
@@ -44,6 +49,19 @@ app.get("/api/exercises/muscle_group/:muscleGroup", (req, res) => {
 
   const wf = initFactory();
   const exercises = wf.createFrom({ muscleGroup: muscleGroup });
+  res.status(200).json(exercises);
+});
+
+app.get("/api/exercises/intensity/:intensity", (req, res) => {
+  const { intensity } = req.params;
+  const isValidIntensity = Object.values(Intensity).includes(intensity);
+  if (!isValidIntensity) {
+    res.status(400).json({ error: "Bad intensity parameter" });
+    return;
+  }
+
+  const wf = initFactory();
+  const exercises = wf.createFrom({ intensity: intensity });
   res.status(200).json(exercises);
 });
 
