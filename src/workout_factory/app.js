@@ -9,8 +9,6 @@ const {
 } = require("./exercise.js");
 const morgan = require("morgan");
 
-app.use(morgan("combined"));
-
 const initFactory = () => {
   const exercises = spec.exercises.map(
     (data) =>
@@ -26,6 +24,8 @@ const initFactory = () => {
 };
 
 const app = express();
+
+app.use(morgan("combined"));
 
 app.use(express.json());
 
