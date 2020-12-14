@@ -18,12 +18,13 @@ RUN npm install
 # me cambio temporalmente a root otra vez para poder borrarlos
 USER root
 RUN rm package.json package-lock.json
-USER node
+RUN mkdir -p /test && chown -R node:node /test
 
 # para que encuentre las dependencias
 ENV PATH=/node_modules/.bin:$PATH
 
 # cambiamos de directorio
+USER node
 WORKDIR /test
 
 # por defecto, ejecutamos
