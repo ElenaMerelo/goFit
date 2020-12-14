@@ -1,19 +1,19 @@
-import {
+const {
   Intensity,
   Discipline,
   MuscleGroup,
   InvalidIntensity,
   InvalidMuscleGroup,
   InvalidDiscipline,
-} from "./exercise.js";
+} = require("./exercise.js");
 
-export const intensityToTime = {
+intensityToTime = {
   [Intensity.LOW]: { ex_time: 40, rest_time: 30 },
   [Intensity.MEDIUM]: { ex_time: 45, rest_time: 15 },
   [Intensity.HIGH]: { ex_time: 50, rest_time: 10 },
 }; // exercise time and rest time in seconds
 
-export default class Workout {
+class Workout {
   constructor(
     total_duration, // minutes
     intensity,
@@ -40,3 +40,8 @@ export default class Workout {
     this.disciplines = disciplines;
   }
 }
+
+module.exports = {
+  intensityToTime,
+  Workout,
+};

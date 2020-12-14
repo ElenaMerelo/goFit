@@ -25,6 +25,14 @@ Para descargarte el contenedor del registro de Github:
 
     docker pull ghcr.io/elenamerelo/gofit:latest
 
+## Rúbricas Práctica 6
+
+He reabierto algunas de de las historias de usuario cerradas anteriormente ([#2](https://github.com/ElenaMerelo/goFit/issues/2), [#3](https://github.com/ElenaMerelo/goFit/issues/4), [#4](https://github.com/ElenaMerelo/goFit/issues/4) y [#5](https://github.com/ElenaMerelo/goFit/issues/5)) para cerrarlas correctamente ahora, al rehacer mi API.
+
+Primeramente creé un documento explicando las nuevas rutas que cubrirían las HU y los tipos que devolverían, para tener claro qué implementar:
+
+- [Documentación endpoints](docs/endpoints.md)
+
 ## Rúbricas Práctica 5
 
 - [Documentación serverless](docs/vercel.md)
@@ -48,7 +56,7 @@ Para descargarte el contenedor del registro de Github:
 - Las clases creadas para poder llevar a cabo el proyecto se encuentran [aquí](src/). 
 - [Documentación](docs/)
 - El proceso del repositorio puede consultarse [aquí](docs/changelog.md)
-- [Tests](tests/)
+- [Tests](tests)
 
 ## Historias de usuario 
 

@@ -1,7 +1,7 @@
-import Workout, { intensityToTime } from "./workout.js";
-import Exercise, { Discipline, Intensity, MuscleGroup } from "./exercise.js";
+const { Workout, intensityToTime } = require("./workout.js");
+const { Discipline, Intensity, MuscleGroup } = require("./exercise.js");
 
-export default class WorkoutFactory {
+class WorkoutFactory {
   constructor(exercises) {
     this.exercises = exercises;
   }
@@ -69,3 +69,7 @@ export default class WorkoutFactory {
     return filtered;
   }
 }
+
+module.exports = {
+  WorkoutFactory,
+};

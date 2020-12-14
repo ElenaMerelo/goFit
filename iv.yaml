@@ -5,7 +5,7 @@ entidad:
   - src/workout_factory/user.js
 lenguaje: javascript
 test:
-  - tests/exercise.test.js
-  - tests/workout.test.js
+  - test/exercise.test.js
+  - test/workout.test.js
 taskfile: package.json
 URL: https://go-fit.elenamerelo.vercel.app/api/workout?duration=100&intensity=high&muscleGroup=upper_body&disciplines=yoga

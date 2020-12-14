@@ -1,10 +1,10 @@
-export const Intensity = {
+const Intensity = {
   HIGH: "high",
   MEDIUM: "medium",
   LOW: "low",
 };
 
-export const Discipline = {
+const Discipline = {
   YOGA: "yoga",
   PILATES: "pilates",
   KICKBOXING: "kickboxing",
@@ -14,7 +14,7 @@ export const Discipline = {
   BODYWEIGHT: "bodyweight",
 };
 
-export const MuscleGroup = {
+const MuscleGroup = {
   TOTALBODY: "total_body",
   LOWERBODY: "lower_body",
   UPPERBODY: "upper_body",
@@ -27,24 +27,24 @@ class AttributeError extends Error {
   }
 }
 
-export class InvalidDiscipline extends AttributeError {
+class InvalidDiscipline extends AttributeError {
   constructor(attr) {
     super("discipline", attr);
   }
 }
 
-export class InvalidIntensity extends AttributeError {
+class InvalidIntensity extends AttributeError {
   constructor(attr) {
     super("intensity", attr);
   }
 }
 
-export class InvalidMuscleGroup extends AttributeError {
+class InvalidMuscleGroup extends AttributeError {
   constructor(attr) {
     super("muscle group", attr);
   }
 }
-export default class Exercise {
+class Exercise {
   constructor(name, discipline, intensity, muscleGroup, description) {
     this.name = name;
     this._discipline = discipline;
@@ -87,3 +87,13 @@ export default class Exercise {
     else throw new InvalidMuscleGroup(attr);
   }
 }
+
+module.exports = {
+  Exercise,
+  InvalidDiscipline,
+  InvalidIntensity,
+  InvalidMuscleGroup,
+  Discipline,
+  MuscleGroup,
+  Intensity,
+};
