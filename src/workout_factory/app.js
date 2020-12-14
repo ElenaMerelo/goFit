@@ -1,8 +1,7 @@
 const express = require("express");
-const WorkoutFactory = require("./workout_factory.js");
-const spec = require("../../test/exercises_data.js");
-const Exercise = require("./exercise.js");
-const { Discipline } = Exercise;
+const { WorkoutFactory } = require("./workout_factory.js");
+const { spec } = require("../../test/exercises_data.js");
+const { Exercise, Discipline } = require("./exercise.js");
 
 const initFactory = () => {
   const exercises = spec.exercises.map(
@@ -25,8 +24,14 @@ app.use(express.json());
 app.get("/api/exercises/discipline/:discipline", (req, res) => {
   const { discipline } = req.params;
   const isValidDiscipline = Object.values(Discipline).includes(discipline);
-  if (!isValidDiscipline)
+  if (!isValidDiscipline) {
     res.status(400).json({ error: "Bad discipline parameter" });
+    return;
+  }
+
+  const wf = initFactory();
+  const exercises = wf.createFrom({ disciplines: [discipline] });
+  res.status(200).json(exercises);
 });
 
 app.get("/api/", (req, res) => res.send("Welcome to goFit"));

@@ -14,9 +14,6 @@ class WorkoutFactory {
       muscleGroup = MuscleGroup.TOTALBODY,
     }
   ) {
-    console.log(disciplines);
-    console.log(intensity);
-    console.log(muscleGroup);
     let filtered = this.createFrom({ disciplines, intensity, muscleGroup });
     console.log(filtered);
     let exercises = filtered.slice(
@@ -55,9 +52,13 @@ class WorkoutFactory {
 
   filterByDiscipline(exercises, value) {
     let filtered = [];
-    for (let i = 0; i < exercises.length; i++) {
-      if (exercises[i].discipline.includes(value)) filtered.push(exercises[i]);
+    for (let j = 0; j < value.length; j++) {
+      for (let i = 0; i < exercises.length; i++) {
+        if (exercises[i].discipline.includes(value[j]))
+          filtered.push(exercises[i]);
+      }
     }
+
     return filtered;
   }
 
