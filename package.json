@@ -8,7 +8,9 @@
   },
   "scripts": {
     "start": "node index.js",
-    "test": "mocha"
+    "test": "mocha",
+    "build": "echo :D",
+    "install": "echo :D"
   },
   "repository": {
     "type": "git",

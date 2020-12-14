@@ -29,34 +29,10 @@ Para descargarte el contenedor del registro de Github:
 
 He reabierto algunas de de las historias de usuario cerradas anteriormente ([#2](https://github.com/ElenaMerelo/goFit/issues/2), [#3](https://github.com/ElenaMerelo/goFit/issues/4), [#4](https://github.com/ElenaMerelo/goFit/issues/4) y [#5](https://github.com/ElenaMerelo/goFit/issues/5)) para cerrarlas correctamente ahora, al rehacer mi API.
 
-Primeramente creé un documento explicando las nuevas rutas que cubrirían las HU y los tipos que devolverían, para tener claro qué implementar:
-
 - [Documentación endpoints](docs/endpoints.md)
-
-## Rúbricas Práctica 5
-
-- [Documentación serverless](docs/vercel.md)
-- [Documentación del bot](docs/telegram.md)
-
-## Rúbricas Práctica 4
-
-- [Integración Continua](docs/ci.md)
-
-## Rúbricas Práctica 3
-
-- [Por qué he elegido `node` como contenedor base de docker](docs/contenedorbase.md)
-- [Dockerfile](./Dockerfile)
-- [Github registry](https://github.com/users/elenamerelo/packages/container/package/gofit)
-- [Contenedor subido a Docker Hub](https://hub.docker.com/r/elenamerelo/gofit)
-- [Automatización del build de docker](docs/dh.md)
-- [Configuración GitHub Container registry](docs/ghcr.md)
-
-## Estructuración
-
-- Las clases creadas para poder llevar a cabo el proyecto se encuentran [aquí](src/). 
-- [Documentación](docs/)
-- El proceso del repositorio puede consultarse [aquí](docs/changelog.md)
-- [Tests](tests)
+- [Framework](docs/framework.md)
+- [Logger](docs/logger.md)
+- [API tests](test/api.test.js)
 
 ## Historias de usuario 
 
