@@ -7,6 +7,9 @@ const {
   MuscleGroup,
   Intensity,
 } = require("./exercise.js");
+const morgan = require("morgan");
+
+app.use(morgan("combined"));
 
 const initFactory = () => {
   const exercises = spec.exercises.map(
