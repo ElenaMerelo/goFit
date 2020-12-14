@@ -29,7 +29,7 @@ app.use(morgan("combined"));
 
 app.use(express.json());
 
-app.get("/api/exercises/discipline/:discipline", (req, res) => {
+app.get("/api/workout/discipline/:discipline", (req, res) => {
   const { discipline } = req.params;
   const isValidDiscipline = Object.values(Discipline).includes(discipline);
   if (!isValidDiscipline) {
@@ -42,7 +42,7 @@ app.get("/api/exercises/discipline/:discipline", (req, res) => {
   res.status(200).json(exercises);
 });
 
-app.get("/api/exercises/muscle_group/:muscleGroup", (req, res) => {
+app.get("/api/workout/muscle_group/:muscleGroup", (req, res) => {
   const { muscleGroup } = req.params;
   const isValidMuscleGroup = Object.values(MuscleGroup).includes(muscleGroup);
   if (!isValidMuscleGroup) {
@@ -55,7 +55,7 @@ app.get("/api/exercises/muscle_group/:muscleGroup", (req, res) => {
   res.status(200).json(exercises);
 });
 
-app.get("/api/exercises/intensity/:intensity", (req, res) => {
+app.get("/api/workout/intensity/:intensity", (req, res) => {
   const { intensity } = req.params;
   const isValidIntensity = Object.values(Intensity).includes(intensity);
   if (!isValidIntensity) {
@@ -68,6 +68,6 @@ app.get("/api/exercises/intensity/:intensity", (req, res) => {
   res.status(200).json(exercises);
 });
 
-app.get("/api/", (req, res) => res.send("Welcome to goFit"));
+app.get("/api/workout/", (req, res) => res.send("Welcome to goFit"));
 
 module.exports = app;
