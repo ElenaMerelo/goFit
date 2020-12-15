@@ -9,4 +9,4 @@ test:
   - test/workout.test.js
 taskfile: package.json
 URL: https://go-fit.elenamerelo.vercel.app/api/workout/intensity/low
-make: npm
+make: make
