@@ -19,7 +19,7 @@ RUN npm install
 USER root
 RUN rm package.json package-lock.json
 RUN mkdir -p /test && chown -R node:node /test
-
+RUN apk update && apk add make
 # para que encuentre las dependencias
 ENV PATH=/node_modules/.bin:$PATH
 
