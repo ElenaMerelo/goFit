@@ -1,6 +1,6 @@
 const request = require("supertest");
 const expect = require("chai").expect;
-const app = require("../src/workout_factory/app.js");
+const app = require("../src/workout_factory/app.js")();
 
 describe("GET /api/workout/discipline/:discipline", () => {
   it("Returns 200", async function () {

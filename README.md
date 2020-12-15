@@ -33,6 +33,7 @@ He reabierto algunas de de las historias de usuario cerradas anteriormente ([#2]
 - [Framework](docs/framework.md)
 - [Logger](docs/logger.md)
 - [API tests](test/api.test.js)
+- [Configuración distribuida](docs/etcd.md)
 
 ## Historias de usuario 
 
